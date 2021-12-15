@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
 @font-face {
-  font-family: "AmericanCap";
-  src: local("AmericanCap"), url(./fuentesycolores/AmericanCaptain.otf) format("truetype");
+  font-family: "AmericanCaptain";
+  src: url(src/app/fuentesycolores/AmericanCaptain.ttf) format("truetype"),
+   url(src/app/fuentesycolores/AmericanCaptain.otf) format("opentype");
+
 }
 
 header {
@@ -20,6 +22,7 @@ header {
 
 header .logo {
 	color:#f2f2f2;
+  font-family: 'AmericanCaptain';
 	font-size:50px;
 	line-height:200px;
 	float:left;
