@@ -10,8 +10,8 @@
     </nav>
 
     <nav class="nav3">
-      <a *ngIf="!isUserLogin" href="#">SignUp</a>
-      <a *ngIf="!isUserLogin" href="#">LogIn</a>
+      <a (click)="openDialog()" *ngIf="!isUserLogin" >SignUp</a>
+      <a *ngIf="!isUserLogin" >LogIn</a>
     </nav>
 
     <nav class="nav2">
