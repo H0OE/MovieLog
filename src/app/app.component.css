@@ -1,3 +1,8 @@
 p {
   font-family: Lato;
 }
+
+mat-dialog-container {
+  background-color: #cdcccb !important;
+  border-radius: 20px !important;
+}
