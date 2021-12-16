@@ -11,10 +11,24 @@ import { ConfiguracionComponent } from './components/configuracion/configuracion
 import { DestacadosComponent } from './components/destacados/destacados.component';
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
 
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, FavoritosComponent, DestacadosComponent, ConfiguracionComponent, HomeComponent, LoginComponent, SignupComponent, FiltrosComponent],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, FormsModule, MatDialogModule, BrowserAnimationsModule],
+  declarations: [
+    AppComponent,
+    FavoritosComponent,
+    DestacadosComponent,
+    ConfiguracionComponent,
+    HomeComponent,
+    LoginComponent,
+    SignupComponent,
+    FiltrosComponent,
+  ],
+  bootstrap: [AppComponent],
+  entryComponents: [
+    LoginComponent,SignupComponent
+  ]
 })
-export class AppModule { }
+export class AppModule {}
