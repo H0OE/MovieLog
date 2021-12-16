@@ -51,6 +51,15 @@ header nav {
   margin-left: 1230px;
   position: fixed;
 }
+.nav4 {
+  float: right;
+  line-height: 200px;
+  font-family: 'Teko';
+  margin-top: -205px;
+  margin-left: 800px;
+  position: fixed;
+  padding: 5px;
+}
 
 header nav a {
   display: inline-block;
@@ -69,3 +78,23 @@ header nav a:hover {
   background: #4a138c;
   border-radius: 50px;
 }
+
+.intputstyle{
+  width: 550px;
+  background: none;
+  border: 0;
+  font-family: 'Teko';
+  font-size: 25px;
+  border-color: white;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  outline-style: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid white 1px;
+  padding: 3px 10px;
+}
+
+
