@@ -4,8 +4,8 @@
 
     <nav>
       <a href="#">Top</a>
-      <a href="#">Géneros</a>
-      <a href="#">Décadas</a>
+      <a (click)='filtro(1)'>Géneros</a>
+      <a (click)='filtro(2)'>Décadas</a>
       <a href="#">Favoritos</a>
     </nav>
 
@@ -15,8 +15,7 @@
     </nav>
 
     <nav class="nav2">
-      <a *ngIf="isUserLogin" href="#">
-        <p style="margin-top:10px; margin-bottom: 10px; float:left;">User</p>
+      <a *ngIf="isUserLogin" href="#">User
         <img
           style="margin-left:20px; margin-top:5px; margin-bottom:5px; float: right"
           src="https://cdn.discordapp.com/attachments/690325769234415646/920852902552166440/icons8-user-64.png"
@@ -26,14 +25,40 @@
     </nav>
 
     <form class="nav4">
-      <input class="intputstyle" type="text" placeholder="Buscar..." />
+      <input
+        class="intputstyle"
+        type="text"
+        placeholder="Buscar..."
+        [(ngModel)]="txtbuscado"
+        [ngModelOptions]="{standalone: true}"
+      />
       <img
         class="image"
-        style="margin-bottom:-15px;"
+        style="margin-bottom:-15px; cursor: pointer;"
         src="https://cdn.discordapp.com/attachments/690325769234415646/920852943320780830/icons8-search-50.png"
         width="50px"
         height="50px"
+        (click)="buscar()"
       />
     </form>
+
   </div>
 </header>
+<div class= 'menu1 hide'>
+
+<p *ngFor= 'let genero of generos'> {{genero.nombre}} <img
+  class="image"
+  style="margin-bottom:-12px;  float:right;"
+  src="{{genero.imagen}}"
+  width="40px"
+  height="40px"
+  (click)="buscar()"
+/>  </p>
+
+</div>
+
+<div class= 'menu2 hide'>
+
+<p *ngFor= 'let decada of decadas'> {{decada.nombre}} </p>
+
+</div>

@@ -2,19 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 header {
-  width: 100%;
-  overflow: hidden; /* Eliminamos errores de float */
+  width: auto;
+  overflow: hidden;
   background: black;
-  margin: auto;
+  margin-right: auto;
   height: auto;
 }
 
 .wrapper {
-  width: 90%; /* Establecemos que el ancho sera del 90% */
+  /* Establecemos que el ancho sera del 90% */
   max-width: 1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
   margin: auto;
   margin-left: 40px;
-  margin-bottom: -30px; /* Centramos los elementos */
+  margin-bottom: -30px;
+  padding-right: -1550px; /* Centramos los elementos */
   overflow: hidden; /* Eliminamos errores de float */
 }
 
@@ -40,24 +41,19 @@ header nav {
   line-height: 200px;
   font-family: 'Teko';
   margin-top: -300px;
-  margin-left: 1280px;
-  position: fixed;
 }
 .nav3 {
   float: right;
   line-height: 200px;
   font-family: 'Teko';
   margin-top: -330px;
-  margin-left: 1230px;
-  position: fixed;
+  margin-right: 20px;
 }
 .nav4 {
   float: right;
   line-height: 200px;
   font-family: 'Teko';
   margin-top: -205px;
-  margin-left: 800px;
-  position: fixed;
   padding: 5px;
 }
 
@@ -77,9 +73,10 @@ header nav a {
 header nav a:hover {
   background: #4a138c;
   border-radius: 50px;
+  cursor: pointer;
 }
 
-.intputstyle{
+.intputstyle {
   width: 550px;
   background: none;
   border: 0;
@@ -97,4 +94,72 @@ header nav a:hover {
   padding: 3px 10px;
 }
 
+.menu1 {
+  width: 230px;
+  overflow: hidden; /* Eliminamos errores de float */
+  background: #3d3c3c;
+  margin: auto;
+  height: auto;
+  float: left;
+  margin-left: 130px;
+  margin-top: -40px;
 
+  border-radius: 0 0 20px 20px;
+}
+.menu1 p {
+  text-decoration: none;
+  font-family: 'Teko';
+  font-size: 25px;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid white 2px;
+
+  margin-top: 0px;
+  align-content: center;
+
+  padding: 20px;
+  margin-bottom: 0px;
+}
+.menu1 :hover {
+  background: #5e5e5e;
+  cursor: pointer;
+}
+
+.menu2 {
+  width: 230px;
+  overflow: hidden; /* Eliminamos errores de float */
+  background: #3d3c3c;
+  margin: auto;
+  height: auto;
+  float: left;
+  margin-left: 245px;
+  margin-top: -40px;
+
+  border-radius: 0 0 20px 20px;
+}
+.menu2 p {
+  text-decoration: none;
+  font-family: 'Teko';
+  font-size: 25px;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid white 2px;
+
+  margin-top: 0px;
+  align-content: center;
+
+  padding: 20px;
+  margin-bottom: 0px;
+}
+.menu2 :hover {
+  background: #5e5e5e;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
