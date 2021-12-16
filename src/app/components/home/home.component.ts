@@ -105,8 +105,13 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  openDialog() {
+  openDialogSign() {
     this.dialogo.open(SignupComponent);
+    console.log('open Dialog');
+  }
+
+  openDialogLog() {
+    this.dialogo.open(LoginComponent);
     console.log('open Dialog');
   }
 }
