@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ConfiguracionComponent } from '../configuracion/configuracion.component';
 import { LoginComponent } from '../login/login.component';
 import { SignupComponent } from '../signup/signup.component';
 
@@ -9,7 +10,7 @@ import { SignupComponent } from '../signup/signup.component';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  public isUserLogin: boolean = false;
+  public isUserLogin: boolean = true;
   public txtbuscado: string = '';
 
   public menu1active = false;
@@ -112,6 +113,11 @@ export class HomeComponent implements OnInit {
 
   openDialogLog() {
     this.dialogo.open(LoginComponent);
+    console.log('open Dialog');
+  }
+
+  openDialogConf() {
+    this.dialogo.open(ConfiguracionComponent);
     console.log('open Dialog');
   }
 }
