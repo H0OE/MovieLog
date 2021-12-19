@@ -9,7 +9,7 @@ body {
   margin-top: 0px;
 }
 
-div {
+.wraper {
   width: 100%;
   margin: auto; /* Centramos los elementos */
   overflow: hidden; /* Eliminamos errores de float */
@@ -22,10 +22,16 @@ div {
 div nav {
   
   display: inline-block;
-  line-height: 200px;
+  line-height: 50px;
   font-family: 'Teko';
   margin: 35px;
   width: 250px;
-  height: 340px;
+  height: auto;
   padding: 1px;
+}
+
+nav p {
+  color: white;
+  font-family: 'Teko';
+  font-size: 30px;
 }

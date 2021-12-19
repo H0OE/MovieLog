@@ -10,7 +10,7 @@ export class DestacadosComponent implements OnInit {
   public peliculas = [
     {
       titulo: 'The Simpsons Movie',
-      descripcion: '',
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
       portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
       portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
       trailer: ''
@@ -18,7 +18,8 @@ export class DestacadosComponent implements OnInit {
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro'
 
     },
     {

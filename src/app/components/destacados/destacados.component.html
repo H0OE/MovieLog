@@ -1,13 +1,70 @@
 <body >
+
+<div class='box'>
+<img
+    style="margin-left:20px;; float: right"
+    src="{{peliculas[0].portada2}}"
+    width=800px
+    height=440px
+    style='margin-right: -350px'
+    alt={{peliculas[0].titulo}}
+  />
+  
+  <nav style='margin-top: 45px'>
+  <a> <img
+    style="margin-left:20px;; float: right"
+    src="{{peliculas[1].portada}}"
+    width=50px
+    height=80px
+    style= 'float: left; margin-right: 10px'
+  />
+  {{peliculas[1].titulo}} 
+  <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
+  </a>
+
+  <a> <img
+    style="margin-left:20px;; float: right"
+    src="{{peliculas[1].portada}}"
+    width=50px
+    height=80px
+    style= 'float: left; margin-right: 10px'
+  />
+  {{peliculas[1].titulo}} 
+  <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
+  </a>
+  <a > <img
+    style="margin-left:20px;; float: right"
+    src="{{peliculas[1].portada}}"
+    width=50px
+    height=80px
+    style= 'float: left; margin-right: 10px'
+  />
+  {{peliculas[1].titulo}} 
+  <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
+  </a>
+  <a> <img
+    style="margin-left:20px;; float: right"
+    src="{{peliculas[1].portada}}"
+    width=50px
+    height=80px
+    style= 'float: left; margin-right: 10px'
+  />
+  {{peliculas[1].titulo}} 
+  <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
+  </a>
+  </nav>
+
+</div>
+
 <div class="wrapper">
-  <nav *ngFor='let pelicula of peliculas' class='lista' >
+  <nav *ngFor='let pelicula of peliculas'  >
   <img
     style="margin-left:20px;; float: right"
     src="{{pelicula.portada}}"
     width=250px
     height=340px
-    alt={{pelicula.titulo}}
   />
+  <p>{{pelicula.titulo}}</p>
   </nav>
 </div>
 </body>
