@@ -10,8 +10,8 @@
     </nav>
 
     <nav class="nav3">
-      <a *ngIf="!isUserLogin" href="#">SignUp</a>
-      <a *ngIf="!isUserLogin" href="#">LogIn</a>
+      <a (click)="openDialogSign()" *ngIf="!isUserLogin" >SignUp</a>
+      <a (click)="openDialogLog()" *ngIf="!isUserLogin" >LogIn</a>
     </nav>
 
     <nav (click)="filtro(3)" class="nav2">
@@ -45,6 +45,7 @@
   </div>
 </header>
 <div class="menu1 hide">
+  <!--(click)="" con {{aumenta una accion o palabra clave en la base de "datos"}} ver el menu de abajo menu 3 -->
   <p *ngFor="let genero of generos">
     {{ genero.nombre }}
     <img
@@ -63,7 +64,7 @@
 </div>
 
 <div class="menu3 hide">
-  <p *ngFor="let option of userOptions">
+  <p *ngFor="let option of userOptions" (click)="actionMenu3(option.nombre)">
     {{ option.nombre }}
     <img
       class="image"
