@@ -3,11 +3,14 @@
   src="https://media.discordapp.net/attachments/690325769234415646/920852902153687040/icons8-user-64_1.png"
 />
 
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+
 <h2>Usuario</h2>
-<input name="user" type="text" placeholder="Ingresar Usuario" />
+<input name="user" type="text" placeholder="Ingresar Usuario" [(ngModel)]="model.user"/>
 
 <h2>Contraseña</h2>
-<input name="pass" type="password" placeholder="Ingresar Contraseña" />
+<input name="pass" type="password" placeholder="Ingresar Contraseña" [(ngModel)]="model.pass"/>
 
-<button>Ingresar</button>
+<button type="submit">Ingresar</button>
+</form>
 </div>
