@@ -15,63 +15,95 @@ export class DestacadosComponent implements OnInit {
       descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
       portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
       portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
-      trailer: ''
+      trailer: "https://www.youtube.com/embed/CxPwGkR0490 | safe"
 
     },
     {
       titulo: 'The Simpsons Movie',
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
       portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro'
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: "https://www.youtube.com/embed/_wnS_RCDdtI"
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     },
     {
       titulo: 'The Simpsons Movie',
-      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg'
+      descripcion: 'Homero en un descuido termina poniendo a todo springfield en peligro',
+      portada:'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      portada2: 'https://superfanatico.files.wordpress.com/2012/05/2266997.jpg',
+      trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI'
 
     }
   ]
@@ -83,6 +115,13 @@ export class DestacadosComponent implements OnInit {
 
   openDialogDesc() {
     const dialogRef = this.dialogo.open(PeliculaComponent );
+
+
+  }
+  openDialogDes(pelicula:any) {
+    const dialogRef = this.dialogo.open(PeliculaComponent, {
+      data: pelicula
+    } );
 
 
   }

@@ -72,7 +72,7 @@
 
 <div class="wrapper">
   <nav *ngFor='let pelicula of peliculas'  >
-    <div (click)="openDialogDesc()">
+    <div (click)="openDialogDes(pelicula)">
   <img
     style="margin-left:20px;; float: right"
     src="{{pelicula.portada}}"

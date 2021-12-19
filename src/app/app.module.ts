@@ -13,6 +13,7 @@ import { FavoritosComponent } from './components/favoritos/favoritos.component';
 
 import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SafePipe } from './components/safe.pipe';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, MatDialogModule, BrowserAnimationsModule],
@@ -25,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent,
     SignupComponent,
     FiltrosComponent,
+    SafePipe
   ],
   bootstrap: [AppComponent],
   entryComponents: [
