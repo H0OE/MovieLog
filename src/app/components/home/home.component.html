@@ -6,17 +6,23 @@
       <a class="hov" href="#">Top</a>
       <a class="hov" (click)="filtro(1)">Géneros</a>
       <a class="hov" (click)="filtro(2)">Décadas</a>
-      <a class="hov" href="#">Favoritos</a>
+      <a
+        class="hov"
+        href="#"
+        routerLink="favoritos"
+        routerLinkActive="active-router"
+        >Favoritos</a
+      >
     </nav>
 
     <nav class="nav3">
-    <a (click)="openDialogSign()" *ngIf="!isUserLogin" >SignUp</a>
-    <a (click)="openDialogLog()" *ngIf="!isUserLogin" >LogIn</a>
+      <a (click)="openDialogSign()" *ngIf="!isUserLogin">SignUp</a>
+      <a (click)="openDialogLog()" *ngIf="!isUserLogin">LogIn</a>
     </nav>
 
     <nav (click)="filtro(3)" class="nav2">
       <a *ngIf="isUserLogin" href="#"
-        >{{username}}
+        >{{ username }}
         <img
           style="margin-left:20px;; float: right"
           src="https://cdn.discordapp.com/attachments/690325769234415646/920852902552166440/icons8-user-64.png"
@@ -76,4 +82,3 @@
     />
   </p>
 </div>
-<app-destacados><app-destacados>

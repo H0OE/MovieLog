@@ -15,8 +15,66 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SafePipe } from './components/safe.pipe';
 
+import { RouterModule, Routes } from '@angular/router';
+import { AccionComponent } from './components/generos/accion/accion.component';
+import { AnimadasComponent } from './components/generos/animadas/animadas.component';
+import { CienciaFiccionComponent } from './components/generos/ciencia-ficcion/ciencia-ficcion.component';
+import { ComediaComponent } from './components/generos/comedia/comedia.component';
+import { MisterioComponent } from './components/generos/misterio/misterio.component';
+import { RomanceComponent } from './components/generos/romance/romance.component';
+import { TerrorComponent } from './components/generos/terror/terror.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'destacados',
+    pathMatch: 'full',
+  },
+  {
+    path: 'favoritos',
+    component: FavoritosComponent,
+  },
+  {
+    path: 'destacados',
+    component: DestacadosComponent,
+  },
+  {
+    path: 'accion',
+    component: AccionComponent,
+  },
+  {
+    path: 'animadas',
+    component: AnimadasComponent,
+  },
+  {
+    path: 'ciencia-ficcion',
+    component: CienciaFiccionComponent,
+  },
+  {
+    path: 'comedia',
+    component: ComediaComponent,
+  },
+  {
+    path: 'misterio',
+    component: MisterioComponent,
+  },
+  {
+    path: 'romance',
+    component: RomanceComponent,
+  },
+  {
+    path: 'terror',
+    component: TerrorComponent,
+  },
+];
 @NgModule({
-  imports: [BrowserModule, FormsModule, MatDialogModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes),
+  ],
   declarations: [
     AppComponent,
     FavoritosComponent,
@@ -26,11 +84,16 @@ import { SafePipe } from './components/safe.pipe';
     LoginComponent,
     SignupComponent,
     FiltrosComponent,
-    SafePipe
+    SafePipe,
+    AccionComponent,
+    AnimadasComponent,
+    CienciaFiccionComponent,
+    ComediaComponent,
+    MisterioComponent,
+    RomanceComponent,
+    TerrorComponent,
   ],
   bootstrap: [AppComponent],
-  entryComponents: [
-    LoginComponent,SignupComponent
-  ]
+  entryComponents: [LoginComponent, SignupComponent],
 })
 export class AppModule {}
