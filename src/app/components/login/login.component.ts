@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
@@ -12,11 +12,12 @@ export class LoginComponent implements OnInit {
     pass: '',
   };
 
-  constructor() {}
+  constructor(private dialogRef: MatDialogRef<LoginComponent>) {}
 
   ngOnInit() {}
 
   onSubmit() {
-    console.log(this.model);
+    //console.log(this.model);
+    this.dialogRef.close({ data: this.model });
   }
 }
