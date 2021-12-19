@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ConfiguracionComponent } from '../configuracion/configuracion.component';
 import { LoginComponent } from '../login/login.component';
 import { SignupComponent } from '../signup/signup.component';
 
@@ -109,8 +110,8 @@ export class HomeComponent implements OnInit {
     if (nombre == 'LogOut') {
       this.isUserLogin = false;
     } else if (nombre == 'Configuración') {
-      //abrir configuracion
-    }
+      this.openDialogConf()
+        }
     document.getElementsByClassName('menu3')[0].classList.toggle('hide');
     this.menu3active = !this.menu3active;
   }
@@ -182,5 +183,11 @@ export class HomeComponent implements OnInit {
       this.username=res.data.user
       this.isUserLogin = true
     });
+  }
+
+  openDialogConf() {
+    const dialogRef = this.dialogo.open(ConfiguracionComponent );
+
+
   }
 }
