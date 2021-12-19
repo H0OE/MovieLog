@@ -3,6 +3,8 @@
 
 header {
   width: auto;
+  margin:-10px;
+  margin-bottom: 0px;
   overflow: hidden;
   background: black;
   margin-right: auto;
@@ -10,9 +12,8 @@ header {
 }
 
 .wrapper {
-  margin: auto;
   margin-left: 40px;
-  margin-bottom: -30px;
+  margin-bottom: -63px;
   padding-right: -1550px; /* Centramos los elementos */
   overflow: hidden; /* Eliminamos errores de float */
 }
@@ -32,6 +33,7 @@ header nav {
   float: bottom, left;
   line-height: 200px;
   font-family: 'Teko';
+  margin-bottom: -10px;
 }
 
 .nav2 {
@@ -76,6 +78,17 @@ header nav a:hover {
   cursor: pointer;
 }
 
+.hov{
+  
+  cursor: pointer;
+}
+
+.hov :hover{
+  background: #4a138c;
+  border-radius: none;
+  cursor: pointer;
+}
+
 .intputstyle {
   width: 550px;
   background: none;
@@ -97,12 +110,12 @@ header nav a:hover {
 .menu1 {
   width: 230px;
   overflow: hidden; /* Eliminamos errores de float */
-  background: #3d3c3c;
+  background: #585757;
   margin: auto;
   height: auto;
   float: left;
   margin-left: 130px;
-  margin-top: -40px;
+  position
 
   border-radius: 0 0 20px 20px;
 }
@@ -123,19 +136,18 @@ header nav a:hover {
   margin-bottom: 0px;
 }
 .menu1 :hover {
-  background: #5e5e5e;
+  background: #8f8e8e;
   cursor: pointer;
 }
 
 .menu2 {
   width: 230px;
   overflow: hidden; /* Eliminamos errores de float */
-  background: #3d3c3c;
+  background: #585757;
   margin: auto;
   height: auto;
   float: left;
   margin-left: 245px;
-  margin-top: -40px;
 
   border-radius: 0 0 20px 20px;
 }
@@ -156,10 +168,50 @@ header nav a:hover {
   margin-bottom: 0px;
 }
 .menu2 :hover {
-  background: #5e5e5e;
+  background: #8f8e8e;
+  cursor: pointer;
+}
+
+.menu3 {
+  width: 230px;
+  overflow: hidden; /* Eliminamos errores de float */
+  background: #585757;
+  margin: auto;
+  height: auto;
+  float: right;
+  margin-right: 70px;
+  margin-top: -130px;
+
+  border-radius: 20px 0px 20px 20px;
+}
+.menu3 p {
+  text-decoration: none;
+  font-family: 'Teko';
+  font-size: 25px;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid white 2px;
+
+  margin-top: 0px;
+  align-content: center;
+
+  padding: 20px;
+  margin-bottom: 0px;
+}
+.menu3 :hover {
+  background: #8f8e8e;
   cursor: pointer;
 }
 
 .hide {
   display: none;
+}
+
+.selected{
+  
+  background: #4a138c;
+  border-radius: 50px;
+
 }
