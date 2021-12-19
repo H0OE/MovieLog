@@ -7,7 +7,7 @@ import {MatDialogRef, MatDialog, MatDialogConfig, MAT_DIALOG_DATA} from '@angula
   styleUrls: ['./pelicula.component.css']
 })
 export class PeliculaComponent implements OnInit {
-  peliculaSrc:string ="https://www.youtube.com/embed/CxPwGkR0490"
+  peliculaSrc:string =""
   descripcion:string="Aqui va una descripcion"
   imgSrc:string=""
 
