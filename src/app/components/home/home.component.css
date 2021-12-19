@@ -115,7 +115,7 @@ header nav a:hover {
   height: auto;
   float: left;
   margin-left: 130px;
-  position
+  position: absolute;
 
   border-radius: 0 0 20px 20px;
 }
@@ -148,6 +148,7 @@ header nav a:hover {
   height: auto;
   float: left;
   margin-left: 245px;
+  position: absolute;
 
   border-radius: 0 0 20px 20px;
 }
@@ -179,8 +180,9 @@ header nav a:hover {
   margin: auto;
   height: auto;
   float: right;
-  margin-right: 70px;
+  margin-left: 1220px;
   margin-top: -130px;
+  position: absolute;
 
   border-radius: 20px 0px 20px 20px;
 }
