@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { PeliculaComponent } from '../pelicula/pelicula.component';
 
 @Component({
   selector: 'app-destacados',
@@ -74,9 +76,14 @@ export class DestacadosComponent implements OnInit {
     }
   ]
 
-  constructor() { }
+  constructor(public dialogo: MatDialog) { }
 
   ngOnInit() {
   }
 
+  openDialogDesc() {
+    const dialogRef = this.dialogo.open(PeliculaComponent );
+
+
+  }
 }

@@ -45,3 +45,7 @@ nav p, nav a {
   font-family: 'Teko';
   font-size: 30px;
 }
+
+nav div:hover{
+  opacity: 0.5;
+}

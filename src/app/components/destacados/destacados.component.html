@@ -11,6 +11,7 @@
   />
   
   <nav style='margin-top: 45px'>
+    <div (click)="openDialogDesc()">
   <a> <img
     style="margin-left:20px;; float: right"
     src="{{peliculas[1].portada}}"
@@ -21,6 +22,9 @@
   {{peliculas[1].titulo}} 
   <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
   </a>
+    </div >
+
+    <div (click)="openDialogDesc()">
 
   <a> <img
     style="margin-left:20px;; float: right"
@@ -32,6 +36,11 @@
   {{peliculas[1].titulo}} 
   <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
   </a>
+
+    </div>
+
+    <div (click)="openDialogDesc()">
+
   <a > <img
     style="margin-left:20px;; float: right"
     src="{{peliculas[1].portada}}"
@@ -42,6 +51,10 @@
   {{peliculas[1].titulo}} 
   <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
   </a>
+
+    </div>
+    <div (click)="openDialogDesc()">
+
   <a> <img
     style="margin-left:20px;; float: right"
     src="{{peliculas[1].portada}}"
@@ -52,12 +65,14 @@
   {{peliculas[1].titulo}} 
   <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
   </a>
+    </div>
   </nav>
 
-</div>
+</div >
 
 <div class="wrapper">
   <nav *ngFor='let pelicula of peliculas'  >
+    <div (click)="openDialogDesc()">
   <img
     style="margin-left:20px;; float: right"
     src="{{pelicula.portada}}"
@@ -65,6 +80,7 @@
     height=340px
   />
   <p>{{pelicula.titulo}}</p>
+    </div>
   </nav>
 </div>
 </body>
