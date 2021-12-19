@@ -113,11 +113,7 @@ export class DestacadosComponent implements OnInit {
   ngOnInit() {
   }
 
-  openDialogDesc() {
-    const dialogRef = this.dialogo.open(PeliculaComponent );
-
-
-  }
+  
   openDialogDes(pelicula:any) {
     const dialogRef = this.dialogo.open(PeliculaComponent, {
       data: pelicula
