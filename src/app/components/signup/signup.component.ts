@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-signup',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
-  constructor() { }
+  model = {
+    user: '',
+    pass: '',
+  };
+  constructor(private dialogRef: MatDialogRef<SignupComponent>) { }
 
   ngOnInit() {
   }
-
+  onSubmit() {
+    //console.log(this.model);
+    this.dialogRef.close({ data: this.model });
+  }
 }

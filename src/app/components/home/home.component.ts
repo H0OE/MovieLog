@@ -11,7 +11,7 @@ import { SignupComponent } from '../signup/signup.component';
 export class HomeComponent implements OnInit {
   public isUserLogin: boolean = true;
   public txtbuscado: string = '';
-
+  public username:string ="User"
   public menu1active = false;
   public menu2active = false;
   public menu3active = false;
@@ -165,12 +165,22 @@ export class HomeComponent implements OnInit {
     }
   }
   openDialogSign() {
-    this.dialogo.open(SignupComponent);
-    console.log('open Dialog');
+    const dialogRef = this.dialogo.open(SignupComponent );
+
+
+    dialogRef.afterClosed().subscribe(res => {
+      this.username=res.data.user
+      this.isUserLogin = true
+    });
   }
 
   openDialogLog() {
-    this.dialogo.open(LoginComponent);
-    console.log('open Dialog');
+    const dialogRef = this.dialogo.open(LoginComponent );
+
+
+    dialogRef.afterClosed().subscribe(res => {
+      this.username=res.data.user
+      this.isUserLogin = true
+    });
   }
 }
