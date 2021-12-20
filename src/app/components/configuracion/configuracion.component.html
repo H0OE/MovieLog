@@ -1,19 +1,37 @@
-<div >
-  <h1>Configuracion</h1>
+<div>
+  <h1>Configuración</h1>
 
-  
   <h2>Usuario</h2>
-  <input name="user" type="text" placeholder="Ingresar Usuario" />
-  
+  <input
+    name="user"
+    type="text"
+    placeholder="Ingresar Usuario"
+    [(ngModel)]="username"
+  />
+
   <h2>Antigua contraseña</h2>
-  <input name="pass" type="password" placeholder="Ingresar Antigua contraseña" />
+  <input
+    name="pass"
+    type="password"
+    placeholder="Ingresar Antigua contraseña"
+    [(ngModel)]="oldPassword"
+  />
 
   <h2>Nueva contraseña</h2>
-  <input name="user" type="text" placeholder="Ingresar Nueva contraseña" />
+  <input
+    name="user"
+    type="text"
+    placeholder="Ingresar Nueva contraseña"
+    [(ngModel)]="newPassword"
+  />
 
   <h2>Confirmar contraseña</h2>
-  <input name="user" type="text" placeholder="Confirmar contraseña" />
+  <input
+    name="user"
+    type="text"
+    placeholder="Confirmar contraseña"
+    [(ngModel)]="confirmPassword"
+  />
 
-  
   <button>Guardar</button>
-  </div>
+</div>

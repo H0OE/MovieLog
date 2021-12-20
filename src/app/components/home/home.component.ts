@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfiguracionComponent } from '../configuracion/configuracion.component';
 import { LoginComponent } from '../login/login.component';
@@ -12,10 +12,12 @@ import { SignupComponent } from '../signup/signup.component';
 export class HomeComponent implements OnInit {
   public isUserLogin: boolean = true;
   public txtbuscado: string = '';
-  public username: string = 'User';
+  public username: string = '';
   public menu1active = false;
   public menu2active = false;
   public menu3active = false;
+
+  @ViewChild(ConfiguracionComponent) configuration;
 
   public generos = [
     {
@@ -99,6 +101,10 @@ export class HomeComponent implements OnInit {
   constructor(public dialogo: MatDialog) {}
 
   ngOnInit() {}
+
+  ngAfterViewInit(){
+    this.username = this.configuration.username;
+  }
 
   buscar() {
     if (this.txtbuscado != '') {

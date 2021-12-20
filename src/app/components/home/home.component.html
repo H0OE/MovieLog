@@ -21,7 +21,7 @@
     </nav>
 
     <nav (click)="filtro(3)" class="nav2">
-      <a *ngIf="isUserLogin" href="#"
+      <a *ngIf="isUserLogin"
         >{{ username }}
         <img
           style="margin-left:20px;; float: right"
@@ -70,7 +70,13 @@
 </div>
 
 <div class="menu2 hide">
-  <p *ngFor="let decada of decadas">{{ decada.nombre }}</p>
+  <p
+    *ngFor="let decada of decadas"
+    routerLink="{{ decada.nombre }}"
+    routerLinkActive="active-router"
+  >
+    {{ decada.nombre }}
+  </p>
 </div>
 
 <div class="menu3 hide">
