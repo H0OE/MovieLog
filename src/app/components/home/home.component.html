@@ -52,7 +52,11 @@
 </header>
 <div class="menu1 hide">
   <!--(click)="" con {{aumenta una accion o palabra clave en la base de "datos"}} ver el menu de abajo menu 3 -->
-  <p *ngFor="let genero of generos">
+  <p
+    *ngFor="let genero of generos"
+    routerLink="{{ genero.nombre }}"
+    routerLinkActive="active-router"
+  >
     {{ genero.nombre }}
     <img
       class="image"

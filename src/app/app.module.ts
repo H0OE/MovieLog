@@ -23,6 +23,14 @@ import { ComediaComponent } from './components/generos/comedia/comedia.component
 import { MisterioComponent } from './components/generos/misterio/misterio.component';
 import { RomanceComponent } from './components/generos/romance/romance.component';
 import { TerrorComponent } from './components/generos/terror/terror.component';
+import { SesentaComponent } from './components/decadas/sesenta/sesenta.component';
+import { CincuentaComponent } from './components/decadas/cincuenta/cincuenta.component';
+import { SetentaComponent } from './components/decadas/setenta/setenta.component';
+import { OchentaComponent } from './components/decadas/ochenta/ochenta.component';
+import { NoventaComponent } from './components/decadas/noventa/noventa.component';
+import { DosMilComponent } from './components/decadas/dos-mil/dos-mil.component';
+import { DosMilDiezComponent } from './components/decadas/dos-mil-diez/dos-mil-diez.component';
+import { DosMilVeinteComponent } from './components/decadas/dos-mil-veinte/dos-mil-veinte.component';
 
 const routes: Routes = [
   {
@@ -39,32 +47,64 @@ const routes: Routes = [
     component: DestacadosComponent,
   },
   {
-    path: 'accion',
+    path: 'Acción',
     component: AccionComponent,
   },
   {
-    path: 'animadas',
+    path: 'Animadas',
     component: AnimadasComponent,
   },
   {
-    path: 'ciencia-ficcion',
+    path: 'Ciencia Ficción',
     component: CienciaFiccionComponent,
   },
   {
-    path: 'comedia',
+    path: 'Comedia',
     component: ComediaComponent,
   },
   {
-    path: 'misterio',
+    path: 'Misterio',
     component: MisterioComponent,
   },
   {
-    path: 'romance',
+    path: 'Romance',
     component: RomanceComponent,
   },
   {
-    path: 'terror',
+    path: 'Terror',
     component: TerrorComponent,
+  },
+  {
+    path: "50's",
+    component: CincuentaComponent,
+  },
+  {
+    path: "60's",
+    component: SesentaComponent,
+  },
+  {
+    path: "70's",
+    component: SetentaComponent,
+  },
+  {
+    path: "80's",
+    component: OchentaComponent,
+  },
+  {
+    path: "90's",
+    component: NoventaComponent,
+  },
+  {
+    path: "2000's",
+    component: DosMilComponent,
+  },
+  {
+    path: "2010's",
+    component: DosMilDiezComponent,
+  },
+  {
+    path: "2020's",
+    component: DosMilVeinteComponent,
   },
 ];
 @NgModule({
@@ -92,6 +132,14 @@ const routes: Routes = [
     MisterioComponent,
     RomanceComponent,
     TerrorComponent,
+    CincuentaComponent,
+    SesentaComponent,
+    SetentaComponent,
+    OchentaComponent,
+    NoventaComponent,
+    DosMilComponent,
+    DosMilDiezComponent,
+    DosMilVeinteComponent,
   ],
   bootstrap: [AppComponent],
   entryComponents: [LoginComponent, SignupComponent],

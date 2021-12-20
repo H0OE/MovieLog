@@ -12,7 +12,7 @@ import { SignupComponent } from '../signup/signup.component';
 export class HomeComponent implements OnInit {
   public isUserLogin: boolean = true;
   public txtbuscado: string = '';
-  public username:string ="User"
+  public username: string = 'User';
   public menu1active = false;
   public menu2active = false;
   public menu3active = false;
@@ -110,8 +110,8 @@ export class HomeComponent implements OnInit {
     if (nombre == 'LogOut') {
       this.isUserLogin = false;
     } else if (nombre == 'Configuración') {
-      this.openDialogConf()
-        }
+      this.openDialogConf();
+    }
     document.getElementsByClassName('menu3')[0].classList.toggle('hide');
     this.menu3active = !this.menu3active;
   }
@@ -166,28 +166,24 @@ export class HomeComponent implements OnInit {
     }
   }
   openDialogSign() {
-    const dialogRef = this.dialogo.open(SignupComponent );
+    const dialogRef = this.dialogo.open(SignupComponent);
 
-
-    dialogRef.afterClosed().subscribe(res => {
-      this.username=res.data.user
-      this.isUserLogin = true
+    dialogRef.afterClosed().subscribe((res) => {
+      this.username = res.data.user;
+      this.isUserLogin = true;
     });
   }
 
   openDialogLog() {
-    const dialogRef = this.dialogo.open(LoginComponent );
+    const dialogRef = this.dialogo.open(LoginComponent);
 
-
-    dialogRef.afterClosed().subscribe(res => {
-      this.username=res.data.user
-      this.isUserLogin = true
+    dialogRef.afterClosed().subscribe((res) => {
+      this.username = res.data.user;
+      this.isUserLogin = true;
     });
   }
 
   openDialogConf() {
-    const dialogRef = this.dialogo.open(ConfiguracionComponent );
-
-
+    const dialogRef = this.dialogo.open(ConfiguracionComponent);
   }
 }
