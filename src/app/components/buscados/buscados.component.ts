@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 import { SenderService } from '../../sender.service';
 
 @Component({
@@ -7,6 +7,8 @@ import { SenderService } from '../../sender.service';
   styleUrls: ['./buscados.component.css'],
 })
 export class BuscadosComponent implements OnInit {
+  public peliculasFiltradas: any;
+
   public peliculas = [
     {
       titulo: 'The Simpsons Movie',
@@ -521,5 +523,9 @@ export class BuscadosComponent implements OnInit {
   ];
   constructor(private service: SenderService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.peliculasFiltradas = this.peliculas.filter((p) =>
+      p.titulo.includes(this.service.filtro)
+    );
+  }
 }

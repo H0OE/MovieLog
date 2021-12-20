@@ -1,0 +1,14 @@
+<body>
+  <div class="wrapper">
+    <nav *ngFor="let pelicula of peliculasFiltradas" class="lista">
+      <img
+        style="margin-left:20px;; float: right"
+        src="{{ pelicula.portada }}"
+        width="250px"
+        height="340px"
+        alt="{{ pelicula.titulo }}"
+      />
+      <p>{{ pelicula.titulo }}</p>
+    </nav>
+  </div>
+</body>

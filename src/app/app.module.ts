@@ -32,6 +32,7 @@ import { DosMilComponent } from './components/decadas/dos-mil/dos-mil.component'
 import { DosMilDiezComponent } from './components/decadas/dos-mil-diez/dos-mil-diez.component';
 import { DosMilVeinteComponent } from './components/decadas/dos-mil-veinte/dos-mil-veinte.component';
 import { BuscadosComponent } from './components/buscados/buscados.component';
+import { SenderService } from './sender.service';
 
 const routes: Routes = [
   {
@@ -149,5 +150,6 @@ const routes: Routes = [
   ],
   bootstrap: [AppComponent],
   entryComponents: [LoginComponent, SignupComponent],
+  providers: [SenderService],
 })
 export class AppModule {}

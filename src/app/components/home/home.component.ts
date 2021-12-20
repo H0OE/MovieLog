@@ -99,7 +99,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
     },
   ];
 
-  constructor(public dialogo: MatDialog, private service: SenderService) {}
+  constructor(
+    public dialogo: MatDialog,
+    private service: SenderService,
+  ) {}
 
   ngOnInit() {}
 
