@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SenderService } from '../../sender.service';
 
 @Component({
   selector: 'app-buscados',
@@ -518,7 +519,7 @@ export class BuscadosComponent implements OnInit {
       trailer: 'https://www.youtube.com/embed/_wnS_RCDdtI',
     },
   ];
-  constructor() {}
+  constructor(private service: SenderService) {}
 
   ngOnInit() {}
 }

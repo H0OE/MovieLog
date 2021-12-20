@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { SenderService } from '../../sender.service';
 import { ConfiguracionComponent } from '../configuracion/configuracion.component';
 import { LoginComponent } from '../login/login.component';
 import { SignupComponent } from '../signup/signup.component';
@@ -98,7 +99,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
     },
   ];
 
-  constructor(public dialogo: MatDialog) {}
+  constructor(public dialogo: MatDialog, private service: SenderService) {}
 
   ngOnInit() {}
 
@@ -108,7 +109,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   buscar() {
     if (this.txtbuscado != '') {
-      console.log(this.txtbuscado);
+      this.service.filtro = this.txtbuscado;
     }
   }
 

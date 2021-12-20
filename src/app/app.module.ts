@@ -31,6 +31,7 @@ import { NoventaComponent } from './components/decadas/noventa/noventa.component
 import { DosMilComponent } from './components/decadas/dos-mil/dos-mil.component';
 import { DosMilDiezComponent } from './components/decadas/dos-mil-diez/dos-mil-diez.component';
 import { DosMilVeinteComponent } from './components/decadas/dos-mil-veinte/dos-mil-veinte.component';
+import { BuscadosComponent } from './components/buscados/buscados.component';
 
 const routes: Routes = [
   {
@@ -106,6 +107,10 @@ const routes: Routes = [
     path: "2020's",
     component: DosMilVeinteComponent,
   },
+  {
+    path: 'buscados',
+    component: BuscadosComponent,
+  },
 ];
 @NgModule({
   imports: [
@@ -140,6 +145,7 @@ const routes: Routes = [
     DosMilComponent,
     DosMilDiezComponent,
     DosMilVeinteComponent,
+    BuscadosComponent,
   ],
   bootstrap: [AppComponent],
   entryComponents: [LoginComponent, SignupComponent],
