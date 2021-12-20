@@ -15,48 +15,8 @@ export class FavoritosComponent implements OnInit {
       trailer: '',
     },
     {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
-    },
-    {
-      titulo: 'The Simpsons Movie',
-      portada: 'https://flxt.tmsimg.com/assets/p166206_p_v13_ao.jpg',
+      titulo: 'Lilo & Stitch',
+      portada:'https://lumiere-a.akamaihd.net/v1/images/p_liloandstitch_19755_0ba5c55e.jpeg',
     },
   ];
   constructor() {}
