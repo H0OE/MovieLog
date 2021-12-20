@@ -6,10 +6,10 @@
 <form (ngSubmit)="onSubmit()" #myForm="ngForm">
 
 <h2>Usuario</h2>
-<input name="user" type="text" placeholder="Ingresar Usuario" [(ngModel)]="model.user"/>
+<input class="input" id="userInput" name="user" type="text" placeholder={{placeUser}} [(ngModel)]="model.user"/>
 
 <h2>Contraseña</h2>
-<input name="pass" type="password" placeholder="Ingresar Contraseña" [(ngModel)]="model.pass"/>
+<input class="input" id="passInput" name="pass" type="password" placeholder={{placePass}} [(ngModel)]="model.pass"/>
 
 <button type="submit">Ingresar</button>
 </form>

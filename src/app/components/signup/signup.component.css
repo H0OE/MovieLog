@@ -7,7 +7,7 @@ h2 {
 
 }
 
-input {
+.input {
   text-align: center;
   display: block;
   margin-right: auto;
@@ -74,4 +74,20 @@ button:hover {
 mat-dialog-container {
   background-color: #cdcccb !important;
   border-radius: 20px !important;
+}
+
+.inputError {
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Teko';
+  outline-color: red;
+  width: 100%;
+  font-size: 30px;
+
+}
+
+.inputError::placeholder{
+  color: red;
 }

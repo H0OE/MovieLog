@@ -11,12 +11,29 @@ export class SignupComponent implements OnInit {
     user: '',
     pass: '',
   };
+
+  placeUser='Ingresar Usuario'
+  placePass='Ingresar Contraseña'
   constructor(private dialogRef: MatDialogRef<SignupComponent>) { }
 
   ngOnInit() {
   }
   onSubmit() {
     //console.log(this.model);
-    this.dialogRef.close({ data: this.model });
-  }
+    
+    if (this.model.user=='' ){
+      console.log("err")
+
+      document.getElementById("userInput").className = "inputError";
+      this.placeUser='Ingrese usuario'
+
+
+    } if(this.model.pass==''){
+      document.getElementById("passInput").className = "inputError";
+      this.placePass='Ingrese contraseña'
+
+    }
+    if(this.model.pass!='' && this.model.user!=''){
+      this.dialogRef.close({ data: this.model });
+    }  }
 }
