@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfiguracionComponent } from '../configuracion/configuracion.component';
 import { LoginComponent } from '../login/login.component';
@@ -9,10 +9,10 @@ import { SignupComponent } from '../signup/signup.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
-export class HomeComponent implements OnInit {
-  public isUserLogin: boolean = true;
+export class HomeComponent implements OnInit, AfterViewInit {
+  public isUserLogin: boolean = false;
   public txtbuscado: string = '';
-  public username: string = '';
+  public username: string = 'User';
   public menu1active = false;
   public menu2active = false;
   public menu3active = false;
@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {}
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     this.username = this.configuration.username;
   }
 
@@ -191,5 +191,9 @@ export class HomeComponent implements OnInit {
 
   openDialogConf() {
     const dialogRef = this.dialogo.open(ConfiguracionComponent);
+
+    dialogRef.afterClosed().subscribe((res) => {
+      this.username = res.data.user;
+    });
   }
 }

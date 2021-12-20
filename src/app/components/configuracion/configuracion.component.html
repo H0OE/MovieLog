@@ -1,37 +1,39 @@
 <div>
-  <h1>Configuración</h1>
+  <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <h1>Configuración</h1>
 
-  <h2>Usuario</h2>
-  <input
-    name="user"
-    type="text"
-    placeholder="Ingresar Usuario"
-    [(ngModel)]="username"
-  />
+    <h2>Usuario</h2>
+    <input
+      name="user"
+      type="text"
+      placeholder="Ingresar Usuario"
+      [(ngModel)]="model.user"
+    />
 
-  <h2>Antigua contraseña</h2>
-  <input
-    name="pass"
-    type="password"
-    placeholder="Ingresar Antigua contraseña"
-    [(ngModel)]="oldPassword"
-  />
+    <h2>Antigua contraseña</h2>
+    <input
+      name="pass"
+      type="password"
+      placeholder="Ingresar Antigua contraseña"
+      [(ngModel)]="oldPassword"
+    />
 
-  <h2>Nueva contraseña</h2>
-  <input
-    name="user"
-    type="text"
-    placeholder="Ingresar Nueva contraseña"
-    [(ngModel)]="newPassword"
-  />
+    <h2>Nueva contraseña</h2>
+    <input
+      name="user"
+      type="password"
+      placeholder="Ingresar Nueva contraseña"
+      [(ngModel)]="newPassword"
+    />
 
-  <h2>Confirmar contraseña</h2>
-  <input
-    name="user"
-    type="text"
-    placeholder="Confirmar contraseña"
-    [(ngModel)]="confirmPassword"
-  />
+    <h2>Confirmar contraseña</h2>
+    <input
+      name="user"
+      type="password"
+      placeholder="Confirmar contraseña"
+      [(ngModel)]="confirmPassword"
+    />
 
-  <button>Guardar</button>
+    <button>Guardar</button>
+  </form>
 </div>
