@@ -1,22 +1,24 @@
 <div id="contenedor">
   <div>
-<img
-  src={{imgSrc}}
-  width=70%
-/>
+    <img src="{{ imgSrc }}" width="70%" />
   </div>
   <div>
+    <h1>Película</h1>
 
-<h1>Pelicula</h1>
+    <h2>Descripción</h2>
+    <h3>{{ descripcion }}</h3>
 
-<h2>Descripcion</h2>
-<h3>{{descripcion}}</h3>
+    <h2>Trailer</h2>
 
-<h2>Trailer</h2>
-
-
-<iframe width="560" height="200" src= "https://www.youtube.com/embed/_wnS_RCDdtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe
+      width="560"
+      height="200"
+      src="https://www.youtube.com/embed/_wnS_RCDdtI"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
   </div>
   <button>Guardar en favoritos</button>
-
 </div>

@@ -1,3 +1,14 @@
-<p>
-cincuenta works!
-</p>
+<body>
+  <div class="wrapper">
+    <nav *ngFor="let pelicula of peliculas" class="lista">
+      <img
+        style="margin-left:20px;; float: right"
+        src="{{ pelicula.portada }}"
+        width="250px"
+        height="340px"
+        alt="{{ pelicula.titulo }}"
+      />
+      <p>{{ pelicula.titulo }}</p>
+    </nav>
+  </div>
+</body>

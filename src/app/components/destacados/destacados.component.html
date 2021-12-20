@@ -1,86 +1,91 @@
-<body >
+<body>
+  <div class="box">
+    <img
+      style="margin-left:20px;; float: right"
+      src="{{ peliculas[0].portada2 }}"
+      width="800px"
+      height="440px"
+      style="margin-right: -350px"
+      alt="{{ peliculas[0].titulo }}"
+    />
 
-<div class='box'>
-<img
-    style="margin-left:20px;; float: right"
-    src="{{peliculas[0].portada2}}"
-    width=800px
-    height=440px
-    style='margin-right: -350px'
-    alt={{peliculas[0].titulo}}
-  />
-  
-  <nav style='margin-top: 45px'>
-    <div>
-  <a> <img
-    style="margin-left:20px;; float: right"
-    src="{{peliculas[1].portada}}"
-    width=50px
-    height=80px
-    style= 'float: left; margin-right: 10px'
-  />
-  {{peliculas[1].titulo}} 
-  <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
-  </a>
-    </div >
+    <nav style="margin-top: 45px">
+      <div (click)="openDialogDes(peliculas[1])">
+        <a>
+          <img
+            style="margin-left:20px;; float: right"
+            src="{{ peliculas[1].portada }}"
+            width="50px"
+            height="80px"
+            style="float: left; margin-right: 10px"
+          />
+          {{ peliculas[1].titulo }}
+          <p style="font-size : 15px; margin-top:-10px">
+            {{ peliculas[1].descripcion }}
+          </p>
+        </a>
+      </div>
 
-    <div >
+      <div>
+        <a>
+          <img
+            style="margin-left:20px;; float: right"
+            src="{{ peliculas[2].portada }}"
+            width="50px"
+            height="80px"
+            style="float: left; margin-right: 10px"
+          />
+          {{ peliculas[2].titulo }}
+          <p style="font-size : 15px; margin-top:-10px">
+            {{ peliculas[2].descripcion }}
+          </p>
+        </a>
+      </div>
 
-  <a> <img
-    style="margin-left:20px;; float: right"
-    src="{{peliculas[1].portada}}"
-    width=50px
-    height=80px
-    style= 'float: left; margin-right: 10px'
-  />
-  {{peliculas[1].titulo}} 
-  <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
-  </a>
+      <div>
+        <a>
+          <img
+            style="margin-left:20px;; float: right"
+            src="{{ peliculas[3].portada }}"
+            width="50px"
+            height="80px"
+            style="float: left; margin-right: 10px"
+          />
+          {{ peliculas[3].titulo }}
+          <p style="font-size : 15px; margin-top:-10px">
+            {{ peliculas[3].descripcion }}
+          </p>
+        </a>
+      </div>
+      <div>
+        <a>
+          <img
+            style="margin-left:20px;; float: right"
+            src="{{ peliculas[4].portada }}"
+            width="50px"
+            height="80px"
+            style="float: left; margin-right: 10px"
+          />
+          {{ peliculas[4].titulo }}
+          <p style="font-size : 15px; margin-top:-10px">
+            {{ peliculas[4].descripcion }}
+          </p>
+        </a>
+      </div>
+    </nav>
+  </div>
 
-    </div>
-
-    <div >
-
-  <a > <img
-    style="margin-left:20px;; float: right"
-    src="{{peliculas[1].portada}}"
-    width=50px
-    height=80px
-    style= 'float: left; margin-right: 10px'
-  />
-  {{peliculas[1].titulo}} 
-  <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
-  </a>
-
-    </div>
-    <div >
-
-  <a> <img
-    style="margin-left:20px;; float: right"
-    src="{{peliculas[1].portada}}"
-    width=50px
-    height=80px
-    style= 'float: left; margin-right: 10px'
-  />
-  {{peliculas[1].titulo}} 
-  <p style= 'font-size : 15px; margin-top:-10px'>{{peliculas[1].descripcion}}</p>
-  </a>
-    </div>
-  </nav>
-
-</div >
-
-<div class="wrapper">
-  <nav *ngFor='let pelicula of peliculas'  >
-    <div (click)="openDialogDes(pelicula)">
-  <img
-    style="margin-left:20px;; float: right"
-    src="{{pelicula.portada}}"
-    width=250px
-    height=340px
-  />
-  <p>{{pelicula.titulo}}</p>
-    </div>
-  </nav>
-</div>
+  <div class="wrapper">
+    <nav *ngFor="let pelicula of peliculas">
+      <div (click)="openDialogDes(pelicula)">
+        <img
+          style="margin-left:20px;; float: right"
+          src="{{ pelicula.portada }}"
+          width="250px"
+          height="340px"
+        />
+        <p>{{ pelicula.titulo }}</p>
+      </div>
+    </nav>
+  </div>
 </body>
