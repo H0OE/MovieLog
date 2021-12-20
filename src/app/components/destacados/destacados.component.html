@@ -2,73 +2,74 @@
   <div class="box">
     <img
       style="margin-left:20px;; float: right"
-      src="{{ peliculas[0].portada2 }}"
+      src="{{ peliculascab[0].portada2 }}"
       width="800px"
       height="440px"
       style="margin-right: -350px"
-      alt="{{ peliculas[0].titulo }}"
+      alt="{{ peliculascab[0].titulo }}"
+      (click)="openDialogDes(peliculascab[0])"
     />
 
-    <nav style="margin-top: 45px">
-      <div (click)="openDialogDes(peliculas[1])">
-        <a>
+    <nav>
+      <div>
+        <a (click)="openDialogDes(peliculascab[1])">
           <img
             style="margin-left:20px;; float: right"
-            src="{{ peliculas[1].portada }}"
+            src="{{ peliculascab[1].portada }}"
             width="50px"
             height="80px"
             style="float: left; margin-right: 10px"
           />
-          {{ peliculas[1].titulo }}
-          <p style="font-size : 15px; margin-top:-10px">
-            {{ peliculas[1].descripcion }}
+          {{ peliculascab[1].titulo }}
+          <p style="font-size : 15px; margin-top:-10px; width: 350px">
+            {{ peliculascab[1].descripcion }}
           </p>
         </a>
       </div>
 
       <div>
-        <a>
+        <a (click)="openDialogDes(peliculascab[2])">
           <img
             style="margin-left:20px;; float: right"
-            src="{{ peliculas[2].portada }}"
+            src="{{ peliculascab[2].portada }}"
             width="50px"
             height="80px"
             style="float: left; margin-right: 10px"
           />
-          {{ peliculas[2].titulo }}
-          <p style="font-size : 15px; margin-top:-10px">
-            {{ peliculas[2].descripcion }}
+          {{ peliculascab[2].titulo }}
+          <p style="font-size : 15px; margin-top:-10px; width: 350px">
+            {{ peliculascab[2].descripcion }}
           </p>
         </a>
       </div>
 
       <div>
-        <a>
+        <a (click)="openDialogDes(peliculascab[3])">
           <img
             style="margin-left:20px;; float: right"
-            src="{{ peliculas[3].portada }}"
+            src="{{ peliculascab[3].portada }}"
             width="50px"
             height="80px"
             style="float: left; margin-right: 10px"
           />
-          {{ peliculas[3].titulo }}
-          <p style="font-size : 15px; margin-top:-10px">
-            {{ peliculas[3].descripcion }}
+          {{ peliculascab[3].titulo }}
+          <p style="font-size : 15px; margin-top:-10px; width: 350px">
+            {{ peliculascab[3].descripcion }}
           </p>
         </a>
       </div>
       <div>
-        <a>
+        <a (click)="openDialogDes(peliculascab[4])">
           <img
             style="margin-left:20px;; float: right"
-            src="{{ peliculas[4].portada }}"
+            src="{{ peliculascab[4].portada }}"
             width="50px"
             height="80px"
             style="float: left; margin-right: 10px"
           />
-          {{ peliculas[4].titulo }}
-          <p style="font-size : 15px; margin-top:-10px">
-            {{ peliculas[4].descripcion }}
+          {{ peliculascab[4].titulo }}
+          <p style="font-size : 15px; margin-top:-10px; width: 350px">
+            {{ peliculascab[4].descripcion }}
           </p>
         </a>
       </div>
